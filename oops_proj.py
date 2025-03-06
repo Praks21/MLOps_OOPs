@@ -11,16 +11,17 @@ class chitchat:
                          2. Press 2 to singin
                          3. Press 3 to write a post
                          4. Press 4 to message a friend
-                         5. Press any other key to exit""")
+                         5. Press any other key to exit
+                          -> """)
         
         if user_input=="1":
             self.signup()
         elif user_input=="2":
             self.signin()
         elif user_input=="3":
-            pass
+            self.my_post()
         elif user_input=="4":
-            pass
+            self.send_msg()
         else:
             exit()
 
@@ -44,6 +45,27 @@ class chitchat:
                 self.loggedin=True
             else:
                 print("please input correct credentials")
+
+        print("\n")
+        self.menu()
+
+    def my_post(self):
+        if self.loggedin==True:
+            txt=input("enter your message: ")
+            print(f"following content has been posted ",txt)
+        else:
+            print("you need to signin first to post something")
+
+        print("\n")
+        self.menu()
+
+    def send_msg(self):
+        if self.loggedin==True:
+            txt=input("enter your message: ")
+            frnd=input("whom to send msg? ") 
+            print(f"your msg has been sent to ", frnd)
+        else:
+            print("you need to signin first to post something")
 
         print("\n")
         self.menu()
