@@ -14,14 +14,39 @@ class chitchat:
                          5. Press any other key to exit""")
         
         if user_input=="1":
-            pass
+            self.signup()
         elif user_input=="2":
-            pass
+            self.signin()
         elif user_input=="3":
             pass
         elif user_input=="4":
             pass
         else:
             exit()
+
+    def signup(self):
+        email=input("enter you email: ")
+        password=input("setup your password: ")
+        self.username=email
+        self.password=password 
+        print("you have signed up successfully")
+        print("\n")
+        self.menu()
+    
+    def signin(self):
+        if self.username=='' and self.password=='':
+            print("Please signup first by pressing 1 in the main menu")
+        else:
+            username1=input("enter your email/username: ")
+            password1=input("enter your password: ")
+            if self.username==username1 and self.password==password1:
+                print("you have signed in succesfully")
+                self.loggedin=True
+            else:
+                print("please input correct credentials")
+
+        print("\n")
+        self.menu()
+
 
 obj = chitchat()
