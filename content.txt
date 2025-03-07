@@ -10,6 +10,21 @@
     > easy to collab
 
 5. end to end project(chitchat class)
+    > function vs method
+    > magic methods or dunder methods
+    > self
+    > you can creta attribute outside class 
     > encapsulation
     > getter and setter
     > static method
+    > decorator
+
+6. Inheritance
+    >Inheritance code example
+    > why inheritance is neede? ( code reusability, parent has no access to chuild class)
+    > what gets inherited? - constructor, Non private attributes, Non Private methods
+    > constructor overloading & method overloading
+    > super keyword ( can be used onlu inside, cannot access variable/attributes, used only inside child class)
+    > type of inheritance - 1. single | 2. Multilevel | 3. Hierarchical | 4. Multiple <Diamond Problem> | 5. Hybrid
+
+

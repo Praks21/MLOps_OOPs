@@ -3,7 +3,7 @@ class chitchat:
         self.username=""
         self.password=""
         self.loggedin=False
-        self.menu()
+        #self.menu()
     
     def menu(self):
         user_input=input("""welcome to chitchat!! how would you like to proceed?
@@ -71,4 +71,4 @@ class chitchat:
         self.menu()
 
 
-obj = chitchat()
+#obj = chitchat()
